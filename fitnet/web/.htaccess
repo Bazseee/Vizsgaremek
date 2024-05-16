@@ -1,0 +1,5 @@
+Redirect 301 /mester1212/user_pages/index.php /mester1212/user_pages/landing.php
+Redirect 301 /mester1212/user_pages/index.html /mester1212/user_pages/landing.php
+Redirect 301 /mester1212/index.html /mester1212/user_pages/landing.php
+Redirect 301 /mester1212/index.php /mester1212/user_pages/landing.php
+Redirect 301 /mester1212/landing.php /mester1212/user_pages/landing.php

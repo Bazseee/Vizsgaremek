@@ -1,0 +1,258 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+
+
+.footer {
+    position: relative;
+    width: 100%;
+    background: #C51720;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url("../images/wave.png");
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    input[type='range'] {
+        overflow: hidden;
+        -webkit-appearance: none;
+        background-color: #c0bbbb;
+    }
+
+    input[type='range']::-webkit-slider-runnable-track {
+        height: 11px;
+        -webkit-appearance: none;
+        color: #13bba4;
+        margin-top: -1px;
+    }
+
+    input[type='range']::-webkit-slider-thumb {
+        width: 20px;
+        -webkit-appearance: none;
+        height: 20px;
+
+        background: #434343;
+        box-shadow: -120px 0 0 120px #f72d2d;
+    }
+}
+
+.settings-form {
+    margin-top: 50px;
+    background-color: #f1efef;
+    border-radius: 15px;
+    min-width: 150px;
+}
+
+.forgot-password{
+    text-decoration: underline;
+    font-size: small;
+    text-align: center;
+}
+
+.button {
+    transition-duration: 0.4s;
+    border: 2px solid #d11f1f;
+    border-radius: 5px;
+    padding: 5px;
+    color: #d11f1f;
+}
+
+.button:hover {
+    background-color: #d11f1f;
+    color: white;
+}
+
+.upload-avatar {
+    margin-top: 50px;
+    background-color: #f1efef;
+    border-radius: 15px;
+    min-height: 300px;
+}
+
+.input-box {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.personal-data-form {
+    padding: 25px;
+}
+
+.upload-avatar-data {
+    padding: 25px;
+}
+
+.user-loggedin {
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.avatar {
+    width: 50px;
+    /* Állítsd be a kívánt méretre */
+    height: 50px;
+    /* Állítsd be a kívánt méretre */
+    border-radius: 50%;
+    /* Kör alakúvá teszi a divet */
+    overflow: hidden;
+    /* Lezárja a tartalmat a kör alakú kerethez */
+    border: 1px solid #ccc;
+    /* Választható: fehér keret a körülött */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Az ábra a div teljes területét elfoglalja és középre pozícionálja */
+}
+
+.newpassword{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+.personal-data-form input[type=radio]:checked {
+    accent-color: #FF0000 !important;
+}
+
+#man:checked {
+    accent-color: #cc1821;
+}
+
+#women:checked {
+    accent-color: #cc1821;
+}
+
+#etc:checked {
+    accent-color: #cc1821;
+}
+
+#regenerate-workout:checked {
+    accent-color: #cc1821;
+}
+
+::selection {
+    background-color: #cc1821;
+    color: #fff;
+}
+
+#container {
+    visibility: hidden;
+}
